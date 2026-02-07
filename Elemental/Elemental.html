@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./decoracion.css">
+        <meta charset="utf-8" />
+        <title>ELEMENTAL</title>
+    </head>
+    <body>
+        <section id="SeleccionarMascota">
+
+            <h1 class="titulo">ELEMENTAL</h1>
+
+            <h2 class="subtitulo">Elige tu mascota:</h2>
+
+            <div id="contenedor-tarjetas" class="tarjetas">
+            </div>
+
+            <label></label>
+
+            <button id="boton-seleccionar">SELECCIONAR</button>
+        </section>
+
+        <section id="canvas-juego">
+            <h1 class="titulo-canvas">Recorre el mapa con tu mascota</h1>
+            <canvas id="mapa-juego"></canvas>
+            <div id="flechas">
+            <button id="b-arriba" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">🡹</button>
+            <button id="b-abajo" onmouseup="detenerMovimiento() "onmousedown="moverAbajo()">🡻</button>
+            <button id="b-izquierda" onmouseup="detenerMovimiento()"onmousedown="moverIzquierda()">🡸</button>
+            <button id="b-derecha" onmouseup="detenerMovimiento()"onmousedown="moverDerecha()">🡺</button>
+            </div>
+        </section>
+
+        <section id="SeleccionarAtaque">
+            <h1 class="titulo">ELEMENTAL</h1>
+
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+
+            <div id="contenedor-ataques" class="tarjetas-ataque">
+            </div>
+        
+        <section id="pantalla-dos">
+
+            <div id="informacion">
+                <p id="resultado">Mucha suerte!</p>
+            </div>
+
+            <div id="ataques">
+                <div id="tarjeta-ataques-jugador">
+                    <p class="texto-vidas-tarjeta"> Victorias: <span id="victorias-jugador">0</span> </p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+
+                <div id="tarjeta-ataques-enemigo">
+                    <p class="texto-vidas-tarjeta"> Victorias: <span id="victorias-enemigo">0</span> </p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+            
+
+        <section id="ReiniciarJuego">
+            <button id="boton-reiniciar">REINICIAR</button>
+        </section>
+
+        </section>
+        <script src="./js/scriptElemental.js"></script>
+    </body>
+</html>
